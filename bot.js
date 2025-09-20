@@ -45,10 +45,11 @@ tokens.forEach((token, index) => {
   // ✅ updated event name
   client.once("clientReady", () => {
     console.log(`Bot ${index + 1} logged in as ${client.user.tag}`);
-    client.user.setActivity("No Commands", { type: ActivityType.Listening });
+    client.user.setActivity("Raqkid505", { type: ActivityType.Listening });
   });
 
   client.login(token).catch(err => {
     console.error(`Failed to login bot ${index + 1}:`, err.message);
   });
 });
+
